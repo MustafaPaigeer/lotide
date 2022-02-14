@@ -12,9 +12,9 @@ const eqArrays = function(array1, array2) {
 const assertArraysEqual = function(arr1, arr2) {
   let result = eqArrays(arr1, arr2);
   if (result) {
-    console.log(`Assertion Passed: ${result} ===  ${result}`);
+    console.log(`Assertion Passed: ${arr1} ===  ${arr2}`);
   } else {
-    console.log(`Assertion Failed: ${result} !== true`);
+    console.log(`Assertion Failed: ${arr1} !== ${arr2}`);
   }
 };
 
@@ -25,7 +25,7 @@ const middle = function(array) {
   } else if (array.length % 2 !== 0) {
     return [array[arrayMiddle]];
   } else if (array.length % 2 === 0) {
-    return array.slice(arrayMiddle - 1 , arrayMiddle);
+    return array.slice(arrayMiddle - 1 , arrayMiddle + 1);
   }
 };
 

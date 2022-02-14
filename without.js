@@ -25,7 +25,7 @@ const without = function(sourceArray, itemsToRemove) {
             }
         }
     }
-    return console.log(sourceArray);
+    return sourceArray;
 }
 
 const words = ["hello", "world", "lighthouse"];
