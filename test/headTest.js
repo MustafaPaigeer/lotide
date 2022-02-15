@@ -1,7 +1,13 @@
-const assertEqual = require('../assertEqual');
+const assert = require('chai').assert;
 const head = require('../head');
 
-// Test Code for HEAD file
+// Mocha and chai based test code
 
-assertEqual(head([5]), 5);
-assertEqual(head(["Hello"]), "Hello");
+describe("Testing Head function with Mocha and Chai", () => {
+    it("returns 1 for [1, 2, 3]", () => {
+        assert.strictEqual(head([1,2, 3]), 1);
+    });
+    it("returns 5 for ['5']", () => {
+        assert.strictEqual(head(['5']), '5');
+    });
+});
