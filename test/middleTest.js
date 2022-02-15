@@ -1,9 +1,9 @@
 const assert = require('chai').assert;
-const middle = require('../middle');
+const _ = require('../index');
 
 describe("Testing the Middle Function: ", () => {
     it("it should return[44, 'apple'] when we pass [2, 44, 'apple', 'banana']", () => {
-        assert.deepEqual(middle([2, 44, "apple", "banana"]), [44, "apple"])
+        assert.deepEqual(_.middle([2, 44, "apple", "banana"]), [44, "apple"])
     });
 });
 

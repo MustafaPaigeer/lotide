@@ -1,9 +1,9 @@
 const assert = require('chai').assert;
-const tail = require('../tail.js');
+const _ = require('../index');
 
 describe("# testing Tail Function: ", () => {
   it("It shoud return [lighthouse, labs] when we pass [ Hello, lighthouse, labs]  ", () => {
-    assert.deepEqual(tail(["Hello", "lighthouse", "labs"]), ["lighthouse", "labs"]);
+    assert.deepEqual(_.tail(["Hello", "lighthouse", "labs"]), ["lighthouse", "labs"]);
   });
 });
 
